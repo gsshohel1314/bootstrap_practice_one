@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Collapse Dropdown</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="text text-danger" align="center">Shohel Rana</h1>
+		<h2 class="text text-primary" align="center">Collapse Dropdown</h2>
+		<hr>
+
+		<p>
+		  <a class="btn btn-primary" data-toggle="collapse" href="#saddam" role="button" aria-expanded="false" aria-controls="saddam">
+		    Saddam
+		  </a>
+
+		  <a class="btn btn-primary" data-toggle="collapse" href="#raihan" role="button" aria-expanded="false" aria-controls="raihan">
+		    Raihan
+		  </a>
+
+		  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#rokon" aria-expanded="false" aria-controls="rokon">
+		    Rokon
+		  </button>
+		</p>
+		<div class="collapse" id="saddam">
+		  <div class="card card-body">
+		    This is saddam.He lives in rajshahi.
+		  </div>
+		</div>
+
+		<div class="collapse" id="rokon">
+		  <div class="card card-body">
+		    This is rokon.He lives in Dhaka.
+		  </div>
+		</div>
+
+		<div class="collapse" id="raihan">
+		  <div class="card card-body">
+		    This is raihan.He lives in Norsindhi.
+		  </div>
+		</div>
+
+
+		<p>
+		  <a class="btn btn-primary" data-toggle="collapse" href="#first" role="button" aria-expanded="false" aria-controls="first">First element</a>
+
+		  <a class="btn btn-primary" data-toggle="collapse" href="#second" role="button" aria-expanded="false" aria-controls="second">Second element</a>
+
+		  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#third" aria-expanded="false" aria-controls="third">Third element</button>
+
+		  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#fourth" aria-expanded="false" aria-controls="fourth">Fourth element</button>
+
+		  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="first second third fourth">All elements</button>
+		</p>
+
+		<div class="row">
+		  <div class="col-sm-4">
+		    <div class="collapse multi-collapse" id="first">
+		      <div class="card card-body">
+		        This is first elements.This is first elements.This is first elements.This is first elements.This is first elements.This is first elements.This is first elements.This is first elements.
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="col-sm-4">
+		    <div class="collapse multi-collapse" id="second">
+		      <div class="card card-body">
+		        This is second elements.This is second elements.This is second elements.This is second elements.This is second elements.This is second elements.This is second elements.This is second elements.
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="col-sm-4">
+		    <div class="collapse multi-collapse" id="third">
+		      <div class="card card-body">
+		        This is third elements.This is third elements.This is third elements.This is third elements.This is third elements.This is third elements.This is third elements.This is third elements.
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="col-sm-4">
+		    <div class="collapse multi-collapse" id="fourth">
+		      <div class="card card-body">
+		        This is fourth elements.This is fourth elements.This is fourth elements.This is fourth elements.This is fourth elements.This is fourth elements.This is fourth elements.This is fourth elements.
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+
+		<div class="accordion col-sm-6" id="accordionExample">
+		  <div class="card">
+		    <div class="card-header" id="headingOne">
+		      <h5 class="mb-0">
+		        <a href="#collapseOne" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne"><li>Users</li> </a>
+		      </h5>
+		    </div>
+
+		    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+		    	<!-- jodi class="collapse show" ditam tahole users collapse ta first e show hoye thakto. -->
+		      <div class="card-body">
+		      	<ul>
+		      		<li> <a href="#"> All user </a></li>
+		      		<li> <a href="#"> Add user </a></li>
+		      		<li> <a href="#"> Show user </a></li>
+		      		<li> <a href="#"> Delete user </a></li>
+		      	</ul>
+		      </div>
+		    </div>
+		  </div>
+
+
+		  <div class="card">
+		    <div class="card-header" id="headingTwo">
+		      <h5 class="mb-0">
+		        <a href="#collapseTwo" data-toggle="collapse" aria-expanded="true" aria-controls="collapseTwo"><li>Student</li> </a>
+		      </h5>
+		    </div>
+		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <ul>
+		      		<li> <a href="#"> Student One </a></li>
+		      		<li> <a href="#"> Student Two </a></li>
+		      		<li> <a href="#"> Student Three </a></li>
+		      		<li> <a href="#"> Student Four </a></li>
+		      	</ul>
+		      </div>
+		    </div>
+		  </div>
+		</div><br>
+
+
+		<div class="dropdown">
+		  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    Dropdown Menu
+		  </button>
+		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		    <a class="dropdown-item" href="#">Action</a>
+		    <a class="dropdown-item" href="#">Another action</a>
+		    <div class="dropdown-divider"></div>
+		    <a class="dropdown-item" href="#">Something else here</a>
+		  </div>
+		</div>
+
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-3.4.1.slim.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

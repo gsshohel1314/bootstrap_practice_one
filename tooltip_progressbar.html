@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tooltip Progressbar</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-danger" align="center">Shohel Rana</h1>
+		<h2 class="text-primary" align="center">Tooltip Progressbar</h2>
+		<hr>
+
+		<!-- Tooltip -->
+		<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+  		  Top
+		</button>
+		<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+		  Bottom
+		</button>
+		<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+		  Right
+		</button>
+		<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+		  Left
+		</button><br><br>
+
+		<!-- Progressbar -->
+		<div class="progress">
+	  		<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+		</div>
+		<br>
+		<div class="progress">
+	  		<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+		</div>
+		<br>
+		<div class="progress">
+	  		<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+		</div>
+		<br>
+		<div class="progress">
+	  		<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+		</div>
+		<br>
+		<div class="progress">
+	  		<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+		</div>
+
+	</div>
+
+
+
+	<script type="text/javascript" src="js/jquery-3.4.1.slim.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+  			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+</body>
+</html>
